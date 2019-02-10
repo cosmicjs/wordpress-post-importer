@@ -1,4 +1,44 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<a href="https://cosmicjs.com" target="_blank"><img src="https://cosmic-s3.imgix.net/7008ac20-2cda-11e9-8899-638c2751ccc5-react-cosmic.jpg?w=1500" width="500" /></a>
+
+# Cosmic JS React Extension Starter
+Extend the <a href="https://cosmicjs.com" target="_blank">Cosmic JS</a> dashboard experience. Cosmic JS Extensions enable you to:
+- Create custom views in your Cosmic JS dashboard
+- Connect to third-party APIs
+
+
+### What is a Comsic JS Extension?
+In short, it's a [JAMstack app](https://jamstack.org). It can be a simple static website, or complex web app, using front end web technology.
+
+
+### Links
+[Extension docs](https://cosmicjs.com/docs/extensions)
+
+[Extension examples](https://cosmicjs.com/extensions/)
+
+
+### Installation
+1. Download the .zip file in this repo
+2. [Login to Cosmic JS](https://cosmicjs.com) and go to Your Bucket > Settings > Extensions > Add Extension
+
+
+### Required files
+#### extension.json
+Key | Type | Description
+--- | --- | ---
+| title     | String | Function title
+| font_awesome_class      | String | Icon to display in the Bucket sidenav
+| image_url      | String | Image thumbnail
+| repo_url      | String | Extension source code url
+
+Example `extension.json` file:
+```json
+{
+  "title": "Extension Starter",
+  "font_awesome_class": "fa-rocket",
+  "image_url": "https://cosmicjs.com/images/marketing/logo-w-brand.jpg",
+  "repo_url": "https://github.com/cosmicjs/extension-starter"
+}
+```
 
 ## Available Scripts
 
@@ -27,42 +67,5 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+### `npm run export`
+Export the contents of this app into the build folder, then zip the build into `extension.zip` file for upload to Cosmic JS.
