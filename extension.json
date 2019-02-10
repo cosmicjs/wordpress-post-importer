@@ -1,6 +1,6 @@
 {
-  "title": "React Extension Starter",
-  "font_awesome_class": "fa-rocket",
+  "title": "WordPress Importer",
+  "font_awesome_class": "fa-wordpress",
   "image_url": "https://cosmicjs.com/images/marketing/logo-w-brand.jpg",
   "repo_url": "https://github.com/cosmicjs/react-extension-starter"
 }

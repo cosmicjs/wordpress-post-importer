@@ -4,8 +4,10 @@
   "private": true,
   "dependencies": {
     "ajv": "^6.8.1",
+    "axios": "^0.18.0",
     "react": "^16.8.1",
-    "react-dom": "^16.8.1"
+    "react-dom": "^16.8.1",
+    "semantic-ui-react": "^0.85.0"
   },
   "devDependencies": {
     "react-scripts": "2.1.3"
