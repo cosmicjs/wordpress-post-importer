@@ -1,19 +1,24 @@
 {
-  "name": "wordpress-import",
+  "name": "react-extension-starter",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "ajv": "^6.8.1",
     "react": "^16.8.1",
     "react-dom": "^16.8.1"
   },
   "devDependencies": {
     "react-scripts": "2.1.3"
   },
+  "resolutions": {
+    "ajv": "6.8.1"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "export": "npm run build && cp extension.json build/extension.json && zip -r extension.zip build"
   },
   "eslintConfig": {
     "extends": "react-app"

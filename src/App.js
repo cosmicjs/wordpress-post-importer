@@ -3,6 +3,10 @@ import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
+  getParam(param) {
+    var urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get(param);
+  }
   render() {
     return (
       <div className="App">
@@ -11,14 +15,10 @@ class App extends Component {
           <p>
             Edit <code>src/App.js</code> and save to reload.
           </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
+          <p>When uploaded to your Cosmic JS Bucket, these keys are available in the URL:</p>
+          <p>Bucket Slug: <code style={{ color: '#00AFD7' }}>{this.getParam('bucket_slug')}</code></p>
+          <p>Bucket Read Key: <code style={{ color: '#00AFD7' }}>{this.getParam('read_key')}</code></p>
+          <p>Bucket Write Key: <code style={{ color: '#00AFD7' }}>{this.getParam('write_key')}</code></p>
         </header>
       </div>
     );
