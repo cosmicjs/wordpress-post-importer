@@ -1,4 +1,4 @@
-<a href="https://cosmicjs.com" target="_blank"><img src="https://cosmic-s3.imgix.net/70b26370-2012-11e9-8b75-9b9c29c68edc-main.jpg?w=1500" width="500" /></a>
+<a href="https://cosmicjs.com" target="_blank"><img src="https://cosmic-s3.imgix.net/7008ac20-2cda-11e9-8899-638c2751ccc5-react-cosmic.jpg?w=1500" width="500" /></a>
 
 # Cosmic JS React Extension Starter
 Extend the <a href="https://cosmicjs.com" target="_blank">Cosmic JS</a> dashboard experience. Cosmic JS Extensions enable you to:
