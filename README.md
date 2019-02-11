@@ -1,6 +1,12 @@
-<a href="https://cosmicjs.com" target="_blank"><img src="https://cosmic-s3.imgix.net/7008ac20-2cda-11e9-8899-638c2751ccc5-react-cosmic.jpg?w=1500" width="500" /></a>
+<a href="https://cosmicjs.com" target="_blank"><img src="https://cosmic-s3.imgix.net/31cc7ee0-2d80-11e9-9636-75201e82cc8c-wordpress-to-cosmic.jpg?w=1500" width="500" /></a>
 
-# Cosmic JS React Extension Starter
+# WordPress Import Extension
+Install WordPress posts from any existing WordPress websites into your Cosmic JS Bucket in a few clicks. Install this Extension by following these steps:
+1. Login to your Cosmic JS Bucket
+2. Go to Your Bucket > Settings > Extensions
+3. Find and install the WordPress Import Extension
+
+# About Cosmic JS Extensions
 Extend the <a href="https://cosmicjs.com" target="_blank">Cosmic JS</a> dashboard experience. Cosmic JS Extensions enable you to:
 - Create custom views in your Cosmic JS dashboard
 - Connect to third-party APIs
