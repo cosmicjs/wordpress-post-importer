@@ -2,7 +2,7 @@
 
 # WordPress Import Extension
 Install WordPress posts from any existing WordPress websites into your Cosmic JS Bucket in a few clicks. Install this Extension by following these steps:
-1. Login to your Cosmic JS Bucket
+1. [Login to your Cosmic JS Bucket](https://cosmicjs.com/login)
 2. Go to Your Bucket > Settings > Extensions
 3. Find and install the WordPress Import Extension
 
