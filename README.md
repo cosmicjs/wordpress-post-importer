@@ -1,7 +1,7 @@
 <a href="https://cosmicjs.com" target="_blank"><img src="https://cosmic-s3.imgix.net/31cc7ee0-2d80-11e9-9636-75201e82cc8c-wordpress-to-cosmic.jpg?w=1500" width="500" /></a>
 
 # WordPress Import Extension
-Install WordPress posts from any existing WordPress websites into your Cosmic JS Bucket in a few clicks. Install this Extension by following these steps:
+Install WordPress posts from any existing WordPress website into your Cosmic JS Bucket in a few clicks. Install this Extension by following these steps:
 1. [Login to your Cosmic JS Bucket](https://cosmicjs.com/login)
 2. Go to Your Bucket > Settings > Extensions
 3. Find and install the WordPress Import Extension
