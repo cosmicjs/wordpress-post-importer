@@ -12,3 +12,28 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+.objects-import {
+  left: -160px;
+  top: -144px;
+  position: absolute;
+  transform: rotate(-90deg);
+  z-index: 0;
+}
+.objects-import path {
+  stroke-width: 7px;
+  stroke-linecap: round;
+  stroke-dasharray: 0 20;
+  -webkit-animation: stroke-invert .8s linear infinite;
+  animation: stroke-invert .8s linear infinite;
+}
+// Animation
+@keyframes stroke{to{stroke-dashoffset:-20}}@-webkit-keyframes stroke-invert{to{stroke-dashoffset:20}}@keyframes stroke-invert{to{stroke-dashoffset:20}}
+.card-floating {
+  box-shadow: rgba(0,21,64,.14) 0 2px 6px, rgba(0,21,64,.05) 0 10px 20px;
+  border-radius: 200px;
+  border: 14px solid #fff;
+  background: #fff;
+  z-index: 1;
+  position: relative;
+  padding: 20px;
+}
