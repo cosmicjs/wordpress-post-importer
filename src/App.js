@@ -31,7 +31,6 @@ const App = () => {
     setLoading(true)
     axios.post(WP_IMPORT_URL, data)
     .then(response => {
-      console.log(response)
       setLoading(false)
       setShowSuccessModal(true)
     })
@@ -44,7 +43,7 @@ const App = () => {
   const [loading, setLoading] = useState(false)
   const [show_success_modal, setShowSuccessModal] = useState(false)
   const [show_fail_modal, setShowFailModal] = useState(false)
-  if (loading)
+  if (loading) {
     return (
       <Dimmer active>
         <h2 style={{ marginBottom: 60 }}>Importing your posts...</h2>
@@ -63,7 +62,8 @@ const App = () => {
         </Grid>
       </Dimmer>
     )
-  if (show_success_modal)
+  }
+  if (show_success_modal) {
     return (
       <Modal open={true} basic size='small'>
         <Header icon='check' color='green' content='Posts Imported' />
@@ -79,7 +79,8 @@ const App = () => {
         </Modal.Actions>
       </Modal>
     )
-  if (show_fail_modal)
+  }
+  if (show_fail_modal) {
     return (
       <Modal open={true} basic size='small'>
         <Header icon='times' color='red' content='Posts Not Imported' />
@@ -96,7 +97,7 @@ const App = () => {
         </Modal.Actions>
       </Modal>
     )
-  
+  }
   const num_options = []
   let i = 20
   while(i <= 200) {
@@ -122,7 +123,7 @@ const App = () => {
           <input placeholder='http://yourwebsite.com/feed' style={{ width: 300 }} name='wordpress_url'/>
         </Form.Field>
         <h2>Step 2:</h2>
-        <p>How many posts do you want to import? This will import that latest posts (and will not import duplicates).</p>
+        <p>How many posts do you want to import? This will import the latest posts (and will not import duplicates).</p>
         <Form.Field>
           <label>Number of posts</label>
           <select name='number_posts' style={{ width: 100 }}>

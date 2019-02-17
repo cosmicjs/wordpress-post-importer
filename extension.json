@@ -1,6 +1,39 @@
 {
-  "title": "WordPress Import",
+  "title": "WordPress Importer",
   "font_awesome_class": "fa-wordpress",
   "image_url": "https://cosmic-s3.imgix.net/31cc7ee0-2d80-11e9-9636-75201e82cc8c-wordpress-to-cosmic.jpg?w=500",
-  "repo_url": "https://github.com/cosmicjs/react-extension-starter"
+  "repo_url": "https://github.com/cosmicjs/wordpress-post-importer",
+  "object_types": [{
+    "title": "Posts",
+    "slug": "posts",
+    "singular": "Post",
+    "metafields": [
+      {
+        "type": "text",
+        "key": "categories",
+        "title": "Categories",
+        "value": ""
+      },
+      {
+        "type": "text",
+        "key": "creator",
+        "title": "Creator",
+        "value": ""
+      },
+      {
+        "type": "textarea",
+        "key": "description",
+        "title": "Description",
+        "value": "",
+        "required": true
+      },
+      {
+        "type": "file",
+        "key": "hero",
+        "title": "Hero",
+        "value": "a3cee800-2db4-11e9-870c-0f3c4f654a4a-cosmic-blur.jpeg",
+        "required": true
+      }
+    ]
+  }]
 }
