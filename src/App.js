@@ -4,7 +4,7 @@ import axios from 'axios'
 import wp_logo from './wp-logo.png'
 import cosmic_logo from './cosmic-logo.svg'
 import './index.css';
-const WP_IMPORT_URL = 'https://wordpress-import-app.cosmicapp1.co/import-wordpress-posts'
+const WP_IMPORT_URL = 'https://wordpress-import-server.herokuapp.com/import-wordpress-posts'
 // const WP_IMPORT_URL = 'http://localhost:3000/import-wordpress-posts'
 const getParam = (param) => {
   var urlParams = new URLSearchParams(window.location.search)
@@ -43,7 +43,7 @@ const App = () => {
   const [loading, setLoading] = useState(false)
   const [show_success_modal, setShowSuccessModal] = useState(false)
   const [show_fail_modal, setShowFailModal] = useState(false)
-  if (loading) {
+  if (!loading) {
     return (
       <Dimmer active>
         <h2 style={{ marginBottom: 60 }}>Importing your posts...</h2>
