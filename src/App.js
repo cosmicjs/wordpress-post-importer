@@ -43,7 +43,7 @@ const App = () => {
   const [loading, setLoading] = useState(false)
   const [show_success_modal, setShowSuccessModal] = useState(false)
   const [show_fail_modal, setShowFailModal] = useState(false)
-  if (!loading) {
+  if (loading) {
     return (
       <Dimmer active>
         <h2 style={{ marginBottom: 60 }}>Importing your posts...</h2>
