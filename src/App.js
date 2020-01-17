@@ -69,7 +69,7 @@ const App = () => {
         <Header icon='check' color='green' content='Posts Imported' />
         <Modal.Content>
           <p style={{ fontSize: 16 }}>
-            Your posts have been successfully imported!&nbsp;&nbsp;&nbsp;<a href={`https://cosmicjs.com/${bucket_slug}/objects?type=posts`} target='_parent'>Go see them&nbsp;&nbsp;<Icon name='external' /></a>
+            Your posts have been successfully imported!&nbsp;&nbsp;&nbsp;<a href={`https://app.cosmicjs.com/${bucket_slug}/objects?type=posts`} target='_parent'>Go see them&nbsp;&nbsp;<Icon name='external' /></a>
           </p>
         </Modal.Content>
         <Modal.Actions>
