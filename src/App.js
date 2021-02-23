@@ -1,8 +1,6 @@
 import React, { useState } from 'react'
 import { Grid, Modal, Message, Icon, Header, Dimmer, Container, Button, Form } from 'semantic-ui-react'
 import axios from 'axios'
-import wp_logo from './wp-logo.png'
-import cosmic_logo from './cosmic-logo.svg'
 import './index.css';
 const WP_IMPORT_URL = 'https://wordpress-import-server.herokuapp.com/import-wordpress-posts'
 // const WP_IMPORT_URL = 'http://localhost:3000/import-wordpress-posts'
@@ -49,7 +47,7 @@ const App = () => {
         <h2 style={{ marginBottom: 60 }}>Importing your posts...</h2>
         <Grid columns='three'>
           <Grid.Column>
-            <div className="card-floating" style={{ width: 180, height: 180 }}><img alt="WordPress Logo" style={{ width: '100%' }} src={wp_logo} /></div>
+            <div className="card-floating" style={{ width: 180, height: 180 }}><img alt="WordPress Logo" style={{ width: '100%' }} src={`https://cdn.cosmicjs.com/fdd328b0-761f-11eb-8bee-5f792a271a88-wp-logo.png`} /></div>
           </Grid.Column>
           <Grid.Column style={{paddingTop: 50, textAlign: 'center'}}>
             <svg className="objects-import" width="486" height="468" viewBox="0 0 486 418" fill="none">
@@ -57,7 +55,7 @@ const App = () => {
             </svg>
           </Grid.Column>
           <Grid.Column>
-          <div className="card-floating" style={{ width: 180, height: 180 }}><img alt="Cosmic JS Logo" style={{ width: '100%' }} src={cosmic_logo} /></div>
+          <div className="card-floating" style={{ width: 180, height: 180 }}><img alt="Cosmic Logo" style={{ width: '100%' }} src={`https://web-assets.cosmicjs.com/images/logo.svg`} /></div>
           </Grid.Column>
         </Grid>
       </Dimmer>
@@ -110,10 +108,10 @@ const App = () => {
       <div style={{ marginBottom: 20 }}>
         <img alt="WordPress to Cosmic" style={{ width: 250, height: 116 }} src='https://cosmic-s3.imgix.net/31cc7ee0-2d80-11e9-9636-75201e82cc8c-wordpress-to-cosmic.jpg?w=500' />
         { /* Hidden images loaded in bg */ }
-        <img alt="WordPress Logo" src={wp_logo} style={{ width: 0, height: 0 }}/>
-        <img alt="Cosmic JS Logo" src={cosmic_logo} style={{ width: 0, height: 0 }}/>
+        <img alt="WordPress Logo" src={`https://cdn.cosmicjs.com/fdd328b0-761f-11eb-8bee-5f792a271a88-wp-logo.png`} style={{ width: 0, height: 0 }}/>
+        <img alt="Cosmic Logo" src={`https://web-assets.cosmicjs.com/images/logo.svg`} style={{ width: 0, height: 0 }}/>
       </div>
-      <p>Follow the steps below to add your WordPress posts to your Cosmic JS Bucket.</p>
+      <p>Follow the steps below to add your WordPress posts to your Cosmic Bucket.</p>
       <h2>Step 1:</h2>
       <p>Add your WordPress blog feed URL. You should be able to see the RSS feed at <br /><code>http://yourwebsite.com/feed</code></p>
       <p>Or copy this working URL: <br /><code>https://techcrunch.com/feed</code>&nbsp;&nbsp;<a href="https://techcrunch.com/feed" target="_blank" rel="noopener noreferrer"><Icon name="external" /></a></p>
@@ -140,7 +138,7 @@ const App = () => {
           <Message.Header>WARNING</Message.Header>
           <p>This will import into the <code>posts</code> Object Type in the Bucket <code>{ bucket_slug }</code></p>
         </Message>
-        <Button type='submit' style={{ backgroundColor: '#00AFD7', color: '#fff' }}>{ !loading ? 'Import into Cosmic JS' : 'Loading...'}</Button>
+        <Button type='submit' style={{ backgroundColor: '#00AFD7', color: '#fff' }}>{ !loading ? 'Import into Cosmic' : 'Loading...'}</Button>
       </Form>
     </Container>
   )
