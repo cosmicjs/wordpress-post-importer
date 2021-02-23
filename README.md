@@ -1,14 +1,14 @@
-<a href="https://cosmicjs.com" target="_blank"><img src="https://cosmic-s3.imgix.net/31cc7ee0-2d80-11e9-9636-75201e82cc8c-wordpress-to-cosmic.jpg?w=1500" width="500" /></a>
+<a href="https://www.cosmicjs.com" target="_blank"><img src="https://cosmic-s3.imgix.net/31cc7ee0-2d80-11e9-9636-75201e82cc8c-wordpress-to-cosmic.jpg?w=1500" width="500" /></a>
 
 # WordPress Import Extension
-Install WordPress posts from any existing WordPress website into your Cosmic JS Bucket in a few clicks. Install this Extension by following these steps:
-1. [Login to your Cosmic JS Bucket](https://cosmicjs.com/login)
+Install WordPress posts from any existing WordPress website into your Cosmic Bucket in a few clicks. Install this Extension by following these steps:
+1. [Login to your Cosmic Bucket](https://www.cosmicjs.com/login)
 2. Go to Your Bucket > Settings > Extensions
 3. Find and install the WordPress Import Extension
 
-# About Cosmic JS Extensions
-Extend the <a href="https://cosmicjs.com" target="_blank">Cosmic JS</a> dashboard experience. Cosmic JS Extensions enable you to:
-- Create custom views in your Cosmic JS dashboard
+# About Cosmic Extensions
+Extend the <a href="https://www.cosmicjs.com" target="_blank">Cosmic</a> dashboard experience. Cosmic Extensions enable you to:
+- Create custom views in your Cosmic dashboard
 - Connect to third-party APIs
 
 
@@ -17,14 +17,14 @@ In short, it's a [JAMstack app](https://jamstack.org). It can be a simple static
 
 
 ### Links
-[Extension docs](https://cosmicjs.com/docs/extensions)
+[Extension docs](https://www.cosmicjs.com/docs/extensions)
 
-[Extension examples](https://cosmicjs.com/extensions/)
+[Extension examples](https://www.cosmicjs.com/extensions/)
 
 
 ### Installation
 1. Download the .zip file in this repo
-2. [Login to Cosmic JS](https://cosmicjs.com) and go to Your Bucket > Settings > Extensions > Add Extension
+2. [Login to Cosmic](https://www.cosmicjs.com) and go to Your Bucket > Settings > Extensions > Add Extension
 
 
 ### Required files
@@ -41,7 +41,7 @@ Example `extension.json` file:
 {
   "title": "Extension Starter",
   "font_awesome_class": "fa-rocket",
-  "image_url": "https://cosmicjs.com/images/marketing/logo-w-brand.jpg",
+  "image_url": "https://www.cosmicjs.com/images/marketing/logo-w-brand.jpg",
   "repo_url": "https://github.com/cosmicjs/extension-starter"
 }
 ```
@@ -73,4 +73,4 @@ The build is minified and the filenames include the hashes.<br>
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
 ### `npm run export`
-Export the contents of this app into the build folder, then zip the build into `extension.zip` file for upload to Cosmic JS.
+Export the contents of this app into the build folder, then zip the build into `extension.zip` file for upload to Cosmic.
