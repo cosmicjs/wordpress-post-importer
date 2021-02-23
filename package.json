@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "ajv": "^6.8.1",
-    "axios": "^0.18.1",
+    "axios": "^0.21.1",
     "react": "^16.8.1",
     "react-dom": "^16.8.1",
     "semantic-ui-react": "^0.85.0"
