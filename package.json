@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "ajv": "^6.8.1",
+    "ajv": "^6.12.3",
     "axios": "^0.18.1",
     "react": "^16.8.1",
     "react-dom": "^16.8.1",
